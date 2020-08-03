@@ -8,6 +8,6 @@ data[[2]] <- as.POSIXct(paste(data[[1]],data[[2]]))
 data <- subset(data, Date=='2007-02-01' | Date=='2007-02-02')
 
 png("plot1.png", width=480, height=480)
-hist(data$Global_active_power, col = 2, main = "Global Active Power",
+hist(data$Global_active_power, col = "red", main = "Global Active Power",
      ylab = "Frequency", xlab = "Global Active Power(kilowatts)")
 dev.off()

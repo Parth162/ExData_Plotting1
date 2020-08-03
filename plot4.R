@@ -19,11 +19,11 @@ lines(data$Time,data$Voltage,type='l')
 
 plot(data$Time,data$Sub_metering_1,type = 'n',xlab = "",ylab = "Energy Sub Metering")
 lines(data$Time,data$Sub_metering_1,type='l')
-lines(data$Time,data$Sub_metering_2,type='l',col = 2)
-lines(data$Time,data$Sub_metering_3,type='l',col = 3)
-legend("topright",col = c(1,2,3),
+lines(data$Time,data$Sub_metering_2,type='l',col = "red")
+lines(data$Time,data$Sub_metering_3,type='l',col = "blue")
+legend("topright",col = c("black","red","blue"),
        legend = c('Sub_metering_1','Sub_metering_2','Sub_metering_3'),
-       lty = c(1,1,1))
+       lty = c(1,1,1), bty = "n")
 
 plot(data$Time,data$Global_reactive_power,type='n',xlab = "datetime",
      ylab = "Global_reactive_power")
